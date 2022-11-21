@@ -1,0 +1,435 @@
+@media (max-width: 1300px) {
+
+    /* main */
+
+    /* slider-block */
+
+    .slider-block__image {
+        object-position: right;
+        opacity: 0.5;
+    }
+
+    .slider-block__description {
+        color: var(--color-basic);
+    }
+}
+
+@media (max-width: 1050px) {
+
+    /* section practice  */
+
+    .practice__column {
+        flex: 0 1 50%;
+    }
+}
+
+@media (max-width: 1020px) {
+
+    /* section advantages  */
+
+    .advantages__column {
+        flex: 0 1 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    /* header */
+
+    /* бургер меню */
+
+    .header__container {
+        justify-content: space-between;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .header__menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80%;
+        max-width: 50%;
+        height: 100%;
+        background-color: rgb(222, 222, 227);
+        transform: translateX(150%);
+        transition: all 1s;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 4;
+    }
+
+    .menu__list {
+        height: 100%;
+        flex-direction: column;
+        margin-top: 115px;
+        margin-left: 50px;
+        font-size: 18px;
+    }
+
+    .menu__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .menu__link:hover::after {
+        display: none;
+    }
+
+    .header__menu.active__menu {
+        opacity: 1;        
+        visibility: visible;
+        transform: translateX(0);
+        z-index: 5;
+    }
+
+    .burger.active__menu .burger__line:nth-child(1) {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+
+    .burger.active__menu .burger__line:nth-child(2) {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+
+    .burger.active__menu .burger__line:nth-child(3) {
+        transform: scale(0);
+    }
+
+    /* main */
+
+    /* slider-block */
+
+    .slider-block__body {
+        padding-top: 120px;
+    }
+
+    .slider-block__title {
+        font-size: 45px;
+        line-height: 68px;
+    }
+
+    /* section services */
+
+    .services__column {
+        flex: 0 1 50%;
+    }
+
+    /* section advantages  */
+
+    .title {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    /* section about */
+
+    .main__about {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .about__body {
+        flex-direction: column;
+    }
+
+    .about__video {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about__content {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    .about-header {
+        text-align: center;
+    }
+
+    .about__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about__item {
+        height: 100%;
+    }
+
+    .about__column {
+        flex: 0 0 50%;
+        padding: 0 15px;
+    }
+
+    .about__header {
+        margin-bottom: 50px;
+    }
+
+
+    /* section clients */
+
+    .main__clients {
+        padding: 30px 0;
+    }
+
+    .clients__item {
+        flex: 0 1 33.33333%;
+        padding: 20px 15px;
+    }
+
+    /* section getintouch */
+
+    .main__getintouch {
+        margin-bottom: 40px;
+    }
+
+    /* footer */
+
+    .footer__column {
+        flex: 0 1 25%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    /* section subscribe */
+
+    .subscribe__title {
+        flex: 0 1 100%;
+        max-width: 100%;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .subscribe__form {
+        flex: 0 1 100%;
+    }
+}
+
+@media (max-width: 740px) {
+    .contact__body {
+        justify-content: center;
+    }
+
+    .contact__content {
+        text-align: center;
+    }
+
+    .contact__button {
+        max-width: 100%;
+        width: 70%;
+    }
+
+    /* footer */
+
+    .footer__column {
+        flex: 0 1 50%;
+    }
+}
+
+@media (max-width: 580px) {
+
+    /* section clients */
+
+    .clients__item {
+        flex: 0 1 50%;
+        padding: 30px 15px;
+    }
+
+    /* footer */
+
+    .body-footer {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575px) {
+
+    /* section services */
+
+    .services__column {
+        flex: 0 1 100%;
+    }
+
+    .item-services__title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /* section advantages  */
+
+    .main__advantages {
+        margin-bottom: 40px;
+    }
+
+    .advantages__header {
+        margin-top: 40px;
+    }
+
+    /* section practice  */
+
+    .main__practice {
+        margin-bottom: 40px;
+    }
+
+    .practice__column {
+        flex: 0 1 100%;
+        margin-bottom: 30px;
+    }
+
+    /* section about */
+
+    .about__video-image {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .about__column {
+        flex: 0 0 100%;
+    }
+
+    /* section subscribe */
+
+    .subscribe__form {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .subscribe__input {
+        border-radius: 5px;
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .subscribe__button {
+        border-radius: 5px;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    /* main */
+
+    /* slider-block */
+
+    .slider-block__title {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .slider-block__buttons {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .slider-block__button:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    /* section advantages  */
+
+    .advantages__column {
+        flex: 0 1 100%;
+    }
+
+    .title {
+        font-size: 25px;
+        line-height: 38px;
+    }
+
+    /* section clients */
+
+    .clients__item {
+        flex: 0 1 100%;
+    }
+
+    /* section subscribe */
+
+    .subscribe__title {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .subscribe__body {
+        margin: 0 -15px;
+        padding: 30px 20px;
+    }
+
+    .subscribe::after {
+        display: none;
+    }
+
+    /* footer */
+
+    .footer__column {
+        flex: 0 1 100%;
+    }
+
+    .footer__body {
+        text-align: center;
+    }
+
+    .footer__contacts {
+        justify-content: center;
+        
+    }
+}
+
+@media (max-width: 360px) {
+
+    /* section subscribe */
+
+    .subscribe__title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 300px) {
+
+    /* бургер меню */
+
+    .header__menu {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .menu__list {
+        margin-top: 115px;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    /* main */
+
+    /* slider-block */
+
+    .slider-block__title {
+        font-size: 30px;
+        line-height: 45px;
+        max-width: 100%;
+    }
+
+    .slider-block__description {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        max-width: 100%;
+    }
+
+    /* section services */
+
+    .item-services__title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
